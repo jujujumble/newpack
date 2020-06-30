@@ -23,5 +23,5 @@ Lab 6 Function
 
 plot(table(rpois(100, 5)), type = "h", col = "red", lwd = 10,
 main = "rpois(100, lambda = 5)")
-mycurve
+myncurve(mu = 5, sigma = 3, a = 0.05)
 }
