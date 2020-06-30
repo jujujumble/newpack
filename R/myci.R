@@ -7,9 +7,10 @@
 #' @export
 #'
 #' @examples
-#'
-myci= function(x){
-  t=qt(0.975,24)
+#'x = rnorm(35, mean = 0, sd =1)
+#' myci(x)
+myci= function(x,n = 25 ){
+  t=qt(0.975,(1-n)
   ci=c()
   ci[1]=mean(x)-t*sd(x)/length(x)
   ci[2]=mean(x)+t*sd(x)/length(x)
